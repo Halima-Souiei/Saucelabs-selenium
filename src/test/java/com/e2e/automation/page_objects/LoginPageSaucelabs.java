@@ -31,6 +31,10 @@ import com.e2e.automation.utils.Setup;
 		@FindBy(how = How.XPATH, using = "//*[@id=\"shopping_cart_container\"]/a/span")
 		private static WebElement panier;
 		
+
+		@FindBy(how = How.XPATH, using = "//*[@id=\"item_4_title_link\"]/div")
+		private static WebElement productName;
+		
 		@FindBy(how = How.ID, using = "checkout")
 		private static WebElement btnCheckout;
 		
@@ -46,6 +50,9 @@ import com.e2e.automation.utils.Setup;
 		@FindBy(how = How.ID, using = "continue")
 		private static WebElement btnContinue;
 		
+		@FindBy(how = How.XPATH, using = "//*[@id=\"checkout_summary_container\"]/div/div[1]/div[3]/div[2]/div[2]/div")
+		private static WebElement price;
+		
 		@FindBy(how = How.ID, using = "finish")
 		private static WebElement btnFinish;
 		
@@ -55,8 +62,11 @@ import com.e2e.automation.utils.Setup;
 		@FindBy(how = How.ID, using = "react-burger-menu-btn")
 		private static WebElement btnBurgerMenu;
 		
-		@FindBy(how = How.XPATH, using = "/html/body/div/div/div/div[1]/div[1]/div[1]/div/div[2]/div[1]/nav/a[3]")
+		@FindBy(how = How.ID, using = "logout_sidebar_link")
 		private static WebElement btnLogout;
+		
+		@FindBy(how = How.XPATH, using = "//*[@id=\"header_container\"]/div[1]/div[2]/div")
+		private static WebElement text;
 		
 		public LoginPageSaucelabs() {
 			super(Setup.getDriver());	
@@ -86,6 +96,9 @@ import com.e2e.automation.utils.Setup;
 			return panier;
 		}
 		
+		 public static WebElement getProductName() {
+			 return productName;
+		 }
 		public static WebElement getBtnCheckout() {
 			return btnCheckout;
 		}
@@ -106,6 +119,10 @@ import com.e2e.automation.utils.Setup;
 			return btnContinue;
 		}
 		
+		public static WebElement getPrice() {
+			return price;
+		}
+		
 		public static WebElement getBtnFinish() {
 			return btnFinish;
 		}
@@ -122,6 +139,12 @@ import com.e2e.automation.utils.Setup;
 		public static WebElement getBtnLogout() {
 			return btnLogout;
 		}
+		
+		public static WebElement getTitlePage() {
+			return text ;
+		}
+		
+		
 		
 
 

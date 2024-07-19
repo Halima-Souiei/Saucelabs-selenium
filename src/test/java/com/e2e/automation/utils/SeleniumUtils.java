@@ -35,6 +35,7 @@ package com.e2e.automation.utils;
 	 * again.
 	 */
 	public class SeleniumUtils extends BasePageSaucelabs {
+		
 
 		/** properties. */
 		protected Properties properties;

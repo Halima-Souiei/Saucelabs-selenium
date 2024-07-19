@@ -81,17 +81,28 @@ package com.e2e.automation.utils;
 			waitUntilCondition(condition, timeoutMessage, timeout);
 		}
 
-		/**
-		 * methode Wait until clickable.
-		 *
-		 * @param driver
-		 * @param by
-		 * @return web element
-		 */
+		///**
+		// * methode Wait until clickable.
+		 //*
+		 //* @param driver
+		 //* @param by
+		 /* @return web element
+		 //*/
 		
-		public static WebElement waitUntilClickable(WebDriver driver, By by) {
+		//public static WebElement waitUntilClickable(WebDriver driver, By by) {
+			//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			//return wait.until(ExpectedConditions.elementToBeClickable(by));
+		//}
+		/**
+				 * methode Wait until clickable.
+				 *
+				 * @param driver
+				 * @param webElement
+				 * @return web element
+				 */
+		public static WebElement waitUntilClickable(WebDriver driver, WebElement webElement) {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			return wait.until(ExpectedConditions.elementToBeClickable(by));
+			return wait.until(ExpectedConditions.elementToBeClickable(webElement));
 		}
 
 	}
