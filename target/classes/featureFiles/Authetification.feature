@@ -1,5 +1,5 @@
- 
-@login
+@login 
+
 Feature: Je souhaite me connecter sur saucelabs
   
   
@@ -10,8 +10,6 @@ Background:
     And Je clique sur le bouton login
     Then Je me rederige vers la page home "Swag Labs"
     
-    
-  
   @ajout-produit 
   Scenario: Ajouter un produit au panier  
    And Je clique sur le bouton add to cart  
@@ -22,7 +20,7 @@ Background:
    And Je saisie le prenom "Souiei"
    And Je saisie le code postale "2300"
    And Je clique sur le bouton continuer 
-   And Je verifie le prix de produit "29.99"
+   And Je verifie le prix de produit "$29.99"
    And Je clique sur le bouton finish
    And Je clique sur le bouton backhome
    And Je clique sur le burger menu

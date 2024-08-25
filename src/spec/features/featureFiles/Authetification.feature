@@ -10,8 +10,6 @@ Background:
     And Je clique sur le bouton login
     Then Je me rederige vers la page home "Swag Labs"
     
-    
-  
   @ajout-produit 
   Scenario: Ajouter un produit au panier  
    And Je clique sur le bouton add to cart  

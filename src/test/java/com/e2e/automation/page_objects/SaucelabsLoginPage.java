@@ -9,7 +9,7 @@ import com.e2e.automation.utils.Setup;
 
  
 	
-	public class LoginPageSaucelabs extends BasePageSaucelabs {
+	public class SaucelabsLoginPage extends BasePageSaucelabs {
 
 		/* Retrieve web element */
 		@FindBy(how = How.ID, using = "user-name")
@@ -68,7 +68,7 @@ import com.e2e.automation.utils.Setup;
 		@FindBy(how = How.XPATH, using = "//*[@id=\"header_container\"]/div[1]/div[2]/div")
 		private static WebElement text;
 		
-		public LoginPageSaucelabs() {
+		public SaucelabsLoginPage() {
 			super(Setup.getDriver());	
 		}
 
